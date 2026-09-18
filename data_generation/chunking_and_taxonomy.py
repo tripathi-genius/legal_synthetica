@@ -206,7 +206,7 @@ if __name__ == "__main__":
         for future in tqdm(concurrent.futures.as_completed(futures), total=len(tasks), desc="Extracting taxonomy"):
             data_chunked.append(future.result())
 
-    with open("nfs/task_class_saved.pickle", "wb") as file:
+    with open("task_class_saved.pickle", "wb") as file:
         pickle.dump(data_chunked, file)
         
     print("Processing complete. Saved to task_class_saved.pickle")
