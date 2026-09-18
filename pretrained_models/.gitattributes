@@ -1,9 +1,0 @@
-llama_3_3b_finetuned/checkpoint-410 filter=lfs diff=lfs merge=lfs -text
-llama_3_3b_finetuned/checkpoint-615 filter=lfs diff=lfs merge=lfs -text
-llama_3_3b_finetuned/final_adapter filter=lfs diff=lfs merge=lfs -text
-llama_3_8b_finetuned/checkpoint-615 filter=lfs diff=lfs merge=lfs -text
-llama_3_8b_finetuned/final_adapter filter=lfs diff=lfs merge=lfs -text
-llama_3_8b_finetuned/checkpoint-410 filter=lfs diff=lfs merge=lfs -text
-qwen_legal_finetune/final_adapter filter=lfs diff=lfs merge=lfs -text
-qwen_legal_finetune/checkpoint-350 filter=lfs diff=lfs merge=lfs -text
-qwen_legal_finetune/checkpoint-525 filter=lfs diff=lfs merge=lfs -text
