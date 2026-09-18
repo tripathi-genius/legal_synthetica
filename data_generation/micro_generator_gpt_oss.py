@@ -310,18 +310,18 @@ if __name__ == "__main__":
 
     print(f"\nSaving {len(hf_training_data)} HF training examples...")
     
-    # Format 1: JSONL (Recommended for HF)
-    with open(OUTPUT_HF_DATASET, "w", encoding="utf-8") as f:
-        for example in hf_training_data:
-            f.write(json.dumps(example, ensure_ascii=False) + "\n")
-    print(f"✓ JSONL format saved to '{OUTPUT_HF_DATASET}'")
+    # # Format : JSONL (Recommended for HF)
+    # with open(OUTPUT_HF_DATASET, "w", encoding="utf-8") as f:
+    #     for example in hf_training_data:
+    #         f.write(json.dumps(example, ensure_ascii=False) + "\n")
+    # print(f"✓ JSONL format saved to '{OUTPUT_HF_DATASET}'")
     
-    # Format 2: JSON array
-    with open(OUTPUT_HF_DATASET_JSON, "w", encoding="utf-8") as f:
-        json.dump(hf_training_data, f, indent=2, ensure_ascii=False)
-    print(f"✓ JSON array format saved to '{OUTPUT_HF_DATASET_JSON}'")
+    # # Format : JSON array
+    # with open(OUTPUT_HF_DATASET_JSON, "w", encoding="utf-8") as f:
+    #     json.dump(hf_training_data, f, indent=2, ensure_ascii=False)
+    # print(f"✓ JSON array format saved to '{OUTPUT_HF_DATASET_JSON}'")
 
-    # Format 3: Markdown documentation
+    # Format Retained: Markdown documentation
     with open(OUTPUT_MD_FILE, "w", encoding="utf-8") as f:
         f.write("# Synthetic Legal Micro Cases and Deep Reasoning\n\n")
         f.write(f"**Total Cases Generated:** {len(successful_markdowns)}\n")
