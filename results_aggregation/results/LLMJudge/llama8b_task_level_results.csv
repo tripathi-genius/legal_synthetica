@@ -1,0 +1,7 @@
+task,records,turns_evaluated,mean_score_1_to_10,std_score,min_score,max_score,verdict_accuracy
+argument_evaluation,347,347,5.386,2.509,2.0,9.0,
+arguments_generation,347,347,4.991,1.395,2.0,9.0,
+final_judgment,347,347,7.133,2.454,1.0,10.0,0.669
+full_chain_multi_turn,347,1041,4.927,2.162,1.0,9.0,0.219
+full_chain_single_turn,347,347,6.96,2.688,2.0,10.0,0.636
+verdict_prediction,347,347,7.231,3.126,1.0,10.0,0.749
