@@ -18,7 +18,7 @@ LOCAL_ENDPOINTS = [
 
 remote_client = OpenAI(
     base_url="http://api.llm.apps.os.dcs.gla.ac.uk/v1", 
-    api_key="ida_IH9MGTzw96irxPvltv6neNlVt5rksafDAsNJmTur"
+    api_key=""
 )
 
 REMOTE_EXTRACTION_MODELS = [
